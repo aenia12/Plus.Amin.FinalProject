@@ -47,7 +47,7 @@ p {
   text-transform: capitalize;
 }
 
-#description:first-letter {
+.description:first-letter {
   text-transform: capitalize;
 }
 
