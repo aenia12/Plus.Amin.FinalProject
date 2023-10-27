@@ -21,12 +21,26 @@ p {
   margin-left: 20px;
 }
 
+.city-header {
+  word-spacing: 35px;
+  padding: 30px auto;
+  font-size: 24px;
+  display: block;
+  font-weight: lighter;
+}
+
 .cities {
   font-weight: lighter;
   font-size: 24px;
   padding: 30px auto;
-  word-spacing: 40px;
+  word-spacing: normal;
   display: block;
+}
+
+.weather-app-middle {
+  display: block;
+  margin-left: 125px;
+  max-width: 100;
 }
 
 #city:first-letter {

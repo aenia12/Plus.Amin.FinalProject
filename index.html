@@ -23,7 +23,7 @@
     <div class="container">
       <div class="weather-app-outline">
         <div class="weather-app">
-          <span class="cities" class="float-right"
+          <span class="city-header" class="float-right"
             >Chicago Tokyo Madrid Istanbul London</span
           >
 
@@ -51,38 +51,37 @@
           </div>
         </div>
         <br />
-        <div class="row">
-          <div class="col-6">
-            <p>
-              <span id="city">City</span>
-              <br />
-              Last updated: <span id="currentTime"></span>
-              <br />
-              <span class="description" id="description"> </span>
-              <img
-                src="http://openweathermap.org/img/wn/01d@2x.png"
-                alt="sunny"
-                id="icon"
-                class="float-left"
-              />
-              <span id="current-temperature">°C </span>
-              <a href="#" class="active" id="celsius-link">°C</a>/<a
-                href="#"
-                class=""
-                id="fahrenheit-link"
-                >°F</a
-              >
-            </p>
+        <div class="weather-app-middle">
+          <div class="row">
+            <div class="col-6">
+              <p>
+                <span id="city">City</span>
+                <br />
+                Last updated: <span id="currentTime"></span>
+                <br />
+                <span class="description" id="description"> </span>
+                <img
+                  src="http://openweathermap.org/img/wn/01d@2x.png"
+                  alt="sunny"
+                  id="icon"
+                  class="float-left"
+                  width="80"
+                />
+                <span id="current-temperature">°C </span>
+                <a href="#" class="active" id="celsius-link">°C</a> /
+                <a href="#" class="" id="fahrenheit-link">°F</a>
+              </p>
+            </div>
+            <div class="col-6">
+              <p>
+                Humidity: <span class="humidity" id="humidity"> </span>%
+                <br />
+                Wind: <span class="wind" id="wind"> </span>mph
+              </p>
+            </div>
           </div>
-          <div class="col-6">
-            <p>
-              Humidity: <span class="humidity" id="humidity"> </span>%
-              <br />
-              Wind: <span class="wind" id="wind"> </span>mph
-            </p>
-          </div>
-          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
         <small>
           <a
             href="https://github.com/aenia12/Plus.Amin.FinalProject"
