@@ -27,6 +27,15 @@ function formatDate(timestamp) {
   return `${currentDay}  ${currentHour}:${currentMinute}`;
 }
 formatDate(new Date());
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 // city search
 function searchCity(event) {
   event.preventDefault();
