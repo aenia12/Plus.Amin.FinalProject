@@ -124,6 +124,8 @@ function showCurrentLocation(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
+  getForecast(response.data.coord);
+
   let temperature = Math.round(response.data.main.temp);
   currentTemperature.innerHTML = temperature + "°C";
 }
