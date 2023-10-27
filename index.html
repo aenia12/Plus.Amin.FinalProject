@@ -21,71 +21,83 @@
 
   <body>
     <div class="container">
-      <div class="weather-app">
-        <span class="cities" class="float-right"
-          >Chicago Tokyo Madrid Istanbul London</span
-        >
+      <div class="weather-app-outline">
+        <div class="weather-app">
+          <span class="cities" class="float-right"
+            >Chicago Tokyo Madrid Istanbul London</span
+          >
 
+          <br />
+          <div class="d-flex justify-content-center w-100">
+            <form id="search-form" class="d-flex align-items-center">
+              <input
+                type="text"
+                placeholder="City"
+                class="cities"
+                autocomplete="off"
+                autofocus="on"
+                id="city-input"
+              />
+              <input
+                type="submit"
+                value="Search"
+                class="search btn btn-primary"
+                id="search-button"
+              />
+              <button class="btn btn-success" id="current-button">
+                Current
+              </button>
+            </form>
+          </div>
+        </div>
         <br />
-        <div class="d-flex justify-content-center w-100">
-          <form id="search-form" class="d-flex align-items-center">
-            <input
-              type="text"
-              placeholder="City"
-              class="cities"
-              autocomplete="off"
-              autofocus="on"
-              id="city-input"
-            />
-            <input
-              type="submit"
-              value="Search"
-              class="search btn btn-primary"
-              id="search-button"
-            />
-            <button class="btn btn-success" id="current-button">Current</button>
-          </form>
+        <div class="row">
+          <div class="col-6">
+            <p>
+              <span id="city">City</span>
+              <br />
+              Last updated: <span id="currentTime"></span>
+              <br />
+              <span class="description" id="description"> </span>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt="sunny"
+                id="icon"
+                class="float-left"
+              />
+              <span id="current-temperature">°C </span>
+              <a href="#" class="active" id="celsius-link">°C</a>/<a
+                href="#"
+                class=""
+                id="fahrenheit-link"
+                >°F</a
+              >
+            </p>
+          </div>
+          <div class="col-6">
+            <p>
+              Humidity: <span class="humidity" id="humidity"> </span>%
+              <br />
+              Wind: <span class="wind" id="wind"> </span>mph
+            </p>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <small>
+          <a
+            href="https://github.com/aenia12/Plus.Amin.FinalProject"
+            target="_blank"
+            >Open-sourced on Github</a
+          >
+          and
+          <a
+            href="https://illustrious-quokka-255b0e.netlify.app/"
+            target="_blank"
+            >Hosted by Netlify</a
+          >
+          by Aenia Amin</small
+        >
       </div>
-      <br />
-      <div class="row">
-        <div class="col-6">
-          <p>
-            <span id="city">City</span>
-            <br />
-            Last updated: <span id="currentTime"></span>
-            <br />
-            <span class="description" id="description"> </span>
-            <img
-              src="http://openweathermap.org/img/wn/01d@2x.png"
-              alt="sunny"
-              id="icon"
-              class="float-left"
-            />
-            <span id="current-temperature">°C </span>
-            <a href="#" class="active" id="celsius-link">°C</a> |
-            <a href="#" class="" id="fahrenheit-link">°F</a>
-          </p>
-        </div>
-        <div class="col-6">
-          <p>
-            Humidity: <span class="humidity" id="humidity"> </span>%
-            <br />
-            Wind: <span class="wind" id="wind"> </span>mph
-          </p>
-        </div>
-        <div class="weather-forecast" id="forecast"></div>
-      </div>
-      <a
-        href="https://github.com/aenia12/Plus.Amin.FinalProject"
-        target="_blank"
-        >Open-sourced on Github</a
-      >
-      and
-      <a href="https://illustrious-quokka-255b0e.netlify.app/" target="_blank"
-        >Hosted by Netlify</a
-      >
-      by Aenia Amin
     </div>
     <script src="app.js"></script>
   </body>
