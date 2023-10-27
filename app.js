@@ -59,7 +59,7 @@ function showWeather(response) {
   let iconElement = document.querySelector("#icon");
   celsiusTemperature = response.data.main.temp;
 
-  weatherCity.innerHTML = temperature;
+  weatherCity.innerHTML = temperature + "°C";
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed * 3.6);
